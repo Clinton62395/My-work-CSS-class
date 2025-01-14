@@ -1,0 +1,51 @@
+p {
+  color: yellow;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  /* background-color:rgb(207, 189, 225) ;  */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KLsKw0jLKi6EOWlMs2QnOvqlopxW-8i54w&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* border part */
+
+  /* border: 20px;
+    border-color: rgb(207, 241, 13);
+    border-style: ridge; */
+
+  /* border: 20px ridge rgb(246, 254, 10); */
+
+  border-bottom: 20px solid yellow;
+  border-right: 20px dashed rgb(46, 12, 239);
+  border-top: 20px ridge purple;
+  border-left: 20px double rgb(6, 167, 235);
+
+  border-radius: 50% ;
+}
+
+h1 {
+    width: 400px;
+    height: auto;
+    background-color: black;
+    color: rgb(245, 7, 7);
+    border-radius: 50%;
+    text-align: center;
+
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px; */
+    padding: 70px 40px 50px 50px;
+
+    /* margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px; */
+    
+    margin: 50px 40px 50px 50px;
+}
+
+
+

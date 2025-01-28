@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .visibity {
+            padding: 20px;
+            margin: 20px;
+            visibility: hidden;
+            cursor: wait;
+            background-color: chartreuse;
+            color: red;
+        }
+
+        .visibity2 {
+            visibility: visible;
+            cursor: wait;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(38, 5, 185);
+            color: yellow;
+
+        }
+
+        .menu {
+            background-color: #e06060;
+            color: white;
+            margin: 20px;
+            padding: 10px;
+            list-style-type: none;
+            width: fit-content;
+        }
+
+        .menu-element {
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            background-color: #606060;
+        }
+
+        .menu-element:hover {
+            background-color: #22e608;
+            color: black;
+        }
+
+        .menu-child {
+            background-color: #606060;
+            color: white;
+            list-style-type: none;
+            display: none;
+            margin: 5px;
+            padding: 5px;
+            position: absolute;
+        }
+
+        .drop-toggle:hover .menu-child {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="visibity">
+        <h1>this is for visibity and using cursor</h1>
+
+    </div>
+
+    <div class="visibity2">
+        <h1>this is for visibity and using cursor</h1>
+    </div>
+
+    <!-- drop-toggle -->
+
+    <ol class="menu">
+        <li class="menu-element">Home</li>
+        <li class="menu-element">About</li>
+        <li class="menu-element">Services</li>
+        <li class="menu-element drop-toggle">Contact
+            <a href="animation.html">Transition</a>
+
+            <ul class="menu-child">
+                <li>Phone</li>
+                <li>Email</li>
+                <li>Address</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

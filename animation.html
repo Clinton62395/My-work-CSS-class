@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Trasforme, Transition, Animation</title>
     <style>
-        ol {
-            background-color: rgb(14, 15, 15);
-            color: yellow;
-            list-style-type: upper-roman;
-            width: fit-content;
-            height: auto;
-            padding: 20px 30px;
-            border-radius: 30px;
-            /* box-shadow: 10px 15px 20px purple; */
-            box-shadow: inset 10px 15px 20px 30px rgb(245, 11, 245);
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            transform: rotate(50deg) translate(100px);
+            border: 1px solid yellow;
 
         }
 
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .box {
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease;
+        }
+        
+        .box:hover {
+            transform: rotate(180deg) translate(0px);
+            border: 5px ridge blue;
+        }
+
+        /* links */
         a {
             background-color: rgb(22, 16, 16);
             color: yellow;
@@ -56,15 +70,13 @@
     <a href="icons.html">Icons</a>
 
 
+    <div class="box">
+        <img src="cltin.webp" alt="logo  transi">
+        <img src="cltin.webp" alt="logo">
+        <img src="cltin.webp" alt="logo">
+        <img src="cltin.webp" alt="logo">
 
-    <ol>
-        <a href="class1.html"> Home</a>
-    <a href="class2.html">About</a>
-    <a href="index.html">contact</a>
-    <a href="class3.html">FAQ</a>
-    <a href="table-form.html">other</a>
-    </ol>
-
+    </div>
 </body>
 
 </html>

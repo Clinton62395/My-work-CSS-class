@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Responsivness</title>
+    <style>
+        .contener {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: burlywood;
+            margin: 0 auto;
+        }
+
+        .contener div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: purple;
+        }
+
+        @media(max-width:768px) {
+            .contener {
+                flex-direction: column;
+            }
+
+            .contener div {
+                background-color: blue;
+            }
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            border: 2px solid black;
+            justify-content: space-between;
+            align-items: center;
+            background-color: gray;
+            flex-direction: row;
+        }
+        .item{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+
+        .link {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            border: none;
+            color: white;
+            background-color: black;            
+        }
+        .link:hover{
+            background-color: red;
+            color: blue;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+
+        .menu{
+            display: none;
+        }
+
+        .box{
+            display: block;
+        }
+
+        @media(max-width:768px){
+            .link{
+                display: none;
+            }
+            .menu{
+                display: block;
+            }
+            .box{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a href="class1.html"> Home</a>
+    <a href="class2.html">About</a>
+    <a href="index.html">contact</a>
+    <a href="class3.html">FAQ</a>
+    <a href="table-form.html">other</a>
+    <a href="indentation class.html">learn from div and positon</a>
+    <a href="animation.html">Transition</a>
+    <a href="icons.html">Icons</a>
+    <a href="Media query.html">Media query </a>
+    <a href="Visibity.html">About visibility</a>
+
+
+    <div class="contener">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav>
+        <div class="item">
+            <img src="cltin.webp " alt="logo">
+        </div>
+
+        <div class="item">
+            <ul class="link">
+                <li><a href="Transform, transition animation.html"></a>Home</li>
+                <li><a href="Media query.html"></a>About</li>
+                <li><a href="Media query.html"></a>About</li>
+                <li><a href="Media query.html"></a>Services</li>
+                <li><a href="Media query.html"></a>Contact</li>
+                <li><a href="Media query.html"></a>Privacy</li>
+                <li><a href="Media query.html"></a>Fournitures</li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="item box">login</button>
+            <button class="item box">sign</button>
+            <button class="menu">
+                ✅
+            </button>
+        </div>
+    </nav>
+</body>
+
+</html>
